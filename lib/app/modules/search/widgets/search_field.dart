@@ -7,7 +7,8 @@ class SearchField extends StatelessWidget {
   final bool autofocus;
   final TextEditingController? controller;
   final String hintText;
-  const SearchField({Key? key, this.controller, this.hintText = '', this.autofocus = false}) : super(key: key);
+  final void Function(String)? onChanged;
+  const SearchField({Key? key, this.controller, this.hintText = '', this.autofocus = false, this.onChanged}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,6 +24,7 @@ class SearchField extends StatelessWidget {
             ),
             Expanded(
               child: TextField(
+                onChanged: onChanged,
                 autofocus: autofocus,
                 style: BLTextTheme.BODY1,
                 cursorColor: BLColors.TEXT40,
