@@ -11,7 +11,7 @@ class SearchResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 24, top: 24, right: 72, bottom: 12),
+      padding: const EdgeInsets.only(left: 24, top: 12, right: 72, bottom: 12),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
