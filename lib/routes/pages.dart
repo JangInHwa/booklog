@@ -1,4 +1,5 @@
 import 'package:booklog/app/modules/home/page.dart';
+import 'package:booklog/app/modules/search/binding.dart';
 import 'package:booklog/app/modules/search/page.dart';
 import 'package:booklog/app/modules/test/page.dart';
 import 'package:get/get.dart';
@@ -8,6 +9,6 @@ abstract class AppPages {
   static final pages = <GetPage>[
     GetPage(name: Routes.TEST, page: () => const TestPage()),
     GetPage(name: Routes.HOME, page: () => const HomePage()),
-    GetPage(name: Routes.SEARCH, page: () => const SearchPage()),
+    GetPage(name: Routes.SEARCH, page: () => const SearchPage(), binding: SearchPageBinding()),
   ];
 }
