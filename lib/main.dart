@@ -16,6 +16,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: Routes.TEST,
       getPages: AppPages.pages,
+      theme: ThemeData(
+        fontFamily: 'Pretendard',
+      ),
     );
   }
 }
