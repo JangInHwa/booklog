@@ -20,7 +20,7 @@ class SearchField extends StatelessWidget {
           children: [
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 12),
-              child: Icon(PhosphorIcons.magnifying_glass, color: BLColors.TEXT40),
+              child: Icon(PhosphorIcons.magnifying_glass, color: BLColors.TEXT40, size: 18),
             ),
             Expanded(
               child: TextField(
