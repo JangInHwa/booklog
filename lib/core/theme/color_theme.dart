@@ -8,4 +8,5 @@ abstract class BLColors {
   static const DARK3 = Color(0xFF333333);
   static const TEXT = Color(0xFFFFFFFF);
   static const TEXT87 = Color.fromRGBO(255, 255, 255, 0.87);
+  static const TEXT40 = Color.fromRGBO(255, 255, 255, 0.4);
 }
