@@ -5,4 +5,5 @@ part of 'pages.dart';
 abstract class Routes {
   static const TEST = '/';
   static const HOME = '/home';
+	static const SEARCH = '/search';
 }
