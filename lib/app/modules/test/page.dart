@@ -29,6 +29,12 @@ class TestPage extends StatelessWidget {
             },
             child: const Text("BOOKLOG"),
           ),
+          TextButton(
+            onPressed: () {
+              Get.toNamed(Routes.DETAIL);
+            },
+            child: const Text("DETAIL"),
+          ),
         ],
       ),
     );
