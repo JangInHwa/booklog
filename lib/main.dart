@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       initialRoute: Routes.TEST,
       getPages: AppPages.pages,
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           backgroundColor: BLColors.DARK2,
           elevation: 0,
         ),
