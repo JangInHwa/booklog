@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 
 abstract class BLTextTheme {
   static const BODY1 = TextStyle(fontFamily: 'Pretendard', fontWeight: FontWeight.normal, fontSize: 16, height: 1.5, color: BLColors.TEXT);
-  static const BODY2 = TextStyle(fontFamily: 'Pretendard', fontWeight: FontWeight.normal, fontSize: 14, height: 1.5, color: BLColors.TEXT87);
+  static const BODY2 = TextStyle(fontFamily: 'Pretendard', fontWeight: FontWeight.normal, fontSize: 14, height: 1.5, color: BLColors.TEXT);
   static const CAPTION1 = TextStyle(fontFamily: 'Pretendard', fontWeight: FontWeight.normal, fontSize: 13, height: 1.2, color: BLColors.TEXT40);
   static const CAPTION2 = TextStyle(fontFamily: 'Pretendard', fontWeight: FontWeight.normal, fontSize: 11, height: 1.2, color: BLColors.TEXT40);
 }

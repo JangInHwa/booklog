@@ -1,3 +1,4 @@
+import 'package:booklog/core/theme/color_theme.dart';
 import 'package:booklog/core/theme/text_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,10 @@ class SearchResult extends StatelessWidget {
                   style: BLTextTheme.BODY2,
                 ),
                 const SizedBox(height: 2),
-                Text(author, style: BLTextTheme.CAPTION1),
+                Text(
+                  author,
+                  style: const TextStyle(fontFamily: 'Pretendard', fontWeight: FontWeight.normal, fontSize: 14, height: 1.2, color: BLColors.TEXT40),
+                ),
               ],
             ),
           ),
