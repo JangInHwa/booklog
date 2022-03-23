@@ -1,6 +1,7 @@
 import 'package:booklog/app/modules/booklog/widgets/book_log_item.dart';
 import 'package:booklog/core/theme/color_theme.dart';
 import 'package:booklog/core/theme/text_theme.dart';
+import 'package:booklog/routes/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_phosphor_icons/flutter_phosphor_icons.dart';
 import 'package:get/get.dart';
@@ -10,7 +11,9 @@ class BookLogPage extends StatelessWidget {
 
   Widget _bookInfo() {
     return MaterialButton(
-      onPressed: () {},
+      onPressed: () {
+        Get.toNamed(Routes.DETAIL);
+      },
       padding: const EdgeInsets.all(24),
       child: Row(
         children: [
