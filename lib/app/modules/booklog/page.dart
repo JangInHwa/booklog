@@ -43,11 +43,22 @@ class BookLogPage extends StatelessWidget {
           icon: const Icon(PhosphorIcons.caret_left),
         ),
         actions: [
-          IconButton(
+          PopupMenuButton(
             icon: const Icon(PhosphorIcons.dots_three_vertical),
-            onPressed: () {
-              // handle the press
-            },
+            onSelected: (_) {},
+            color: BLColors.DARK3,
+            itemBuilder: (_) => [
+              PopupMenuItem(
+                child: Row(
+                  children: const [
+                    Icon(PhosphorIcons.trash, size: 18),
+                    SizedBox(width: 8),
+                    Text("이 북로그 삭제", style: BLTextTheme.BODY1),
+                  ],
+                ),
+                value: "delete",
+              ),
+            ],
           ),
         ],
       ),
