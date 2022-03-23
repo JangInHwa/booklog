@@ -16,6 +16,12 @@ class TestPage extends StatelessWidget {
               Get.toNamed(Routes.HOME);
             },
             child: const Text("HOME"),
+          ),
+          TextButton(
+            onPressed: () {
+              Get.toNamed(Routes.SEARCH);
+            },
+            child: const Text("SEARCH"),
           )
         ],
       ),
