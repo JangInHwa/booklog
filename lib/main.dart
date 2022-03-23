@@ -1,3 +1,4 @@
+import 'package:booklog/core/theme/color_theme.dart';
 import 'package:booklog/routes/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,6 +18,10 @@ class MyApp extends StatelessWidget {
       initialRoute: Routes.TEST,
       getPages: AppPages.pages,
       theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          backgroundColor: BLColors.DARK2,
+          elevation: 0,
+        ),
         fontFamily: 'Pretendard',
       ),
     );
