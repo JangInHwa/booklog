@@ -13,6 +13,6 @@ abstract class AppPages {
     GetPage(name: Routes.HOME, page: () => const HomePage()),
     GetPage(name: Routes.SEARCH, page: () => const SearchPage(), binding: SearchPageBinding()),
     GetPage(name: Routes.BOOKLOG, page: () => const BookLogPage()),
-    GetPage(name: Routes.DETAIL, page: () => DetailPage()),
+    GetPage(name: Routes.DETAIL, page: () => const DetailPage()),
   ];
 }
