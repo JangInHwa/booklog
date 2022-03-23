@@ -33,6 +33,39 @@ class DetailPage extends StatelessWidget {
     );
   }
 
+  Widget _progress() {
+    return Container(
+      color: BLColors.DARK2,
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text('진행도', style: BLTextTheme.CAPTION1),
+          const SizedBox(height: 8),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: const [
+              Text('72', style: BLTextTheme.HEADER1),
+              Text('/263 페이지', style: TextStyle(fontFamily: 'Pretendard', fontWeight: FontWeight.normal, fontSize: 16, height: 1.2, color: BLColors.TEXT40)),
+            ],
+          ),
+          const SizedBox(height: 24),
+          const SizedBox(
+            height: 40,
+            child: ClipRRect(
+              borderRadius: BorderRadius.all(Radius.circular(12)),
+              child: LinearProgressIndicator(
+                value: 72 / 263,
+                color: Color(0xFF24A641),
+                backgroundColor: BLColors.DARK3,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,6 +81,8 @@ class DetailPage extends StatelessWidget {
       body: ListView(
         children: [
           _bookMetaInfo(),
+          Container(height: 24, color: BLColors.DARK1),
+          _progress(),
         ],
       ),
     );
