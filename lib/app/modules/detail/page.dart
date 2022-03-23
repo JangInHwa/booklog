@@ -44,7 +44,7 @@ class DetailPage extends StatelessWidget {
           icon: const Icon(PhosphorIcons.caret_left),
         ),
       ),
-      backgroundColor: BLColors.DARK1,
+      backgroundColor: BLColors.DARK2,
       body: ListView(
         children: [
           _bookMetaInfo(),
